@@ -17,13 +17,16 @@
 </head>
 
 <body class="main-bg">
+
+  <input type="checkbox" id="close-menu" class="close-menu" aria-label="Close menu" role="button">
+  <label for="close-menu" title="close menu" class="close-menu-label"></label>
   <aside class="menu white-bg">
     <div class="main-content menu-content">
-      <h1>
+      <h1 onclick="getElementById('close-menu').checked = false;">
         <a href="#home">LOGO</a>
       </h1>
       <nav>
-        <ul>
+        <ul onclick="getElementById('close-menu').checked = false;">
           <li><a href="#intro">intro</a></li>
           <li><a href="#grid-one">my grid</a></li>
           <li><a href="#gallery">gallery</a></li>
@@ -249,6 +252,7 @@
     <p><a rel="nofollow" target="_blank" href="https://beacons.page/otaviomiranda">Feito com <span class="heart">❤</span> por Carlos Humberto Brasileiro Toscano</a></p>
   </footer>  
 
+  <a class="back-to-top" href="#">➤</a>
 </body>
 
 </html>
